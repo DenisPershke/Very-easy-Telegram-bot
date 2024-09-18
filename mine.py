@@ -17,7 +17,8 @@ def handle_help(message):
 
 @bot.message_handler(commands=['info'])
 def handle_text(message):
-    bot.reply_to(message, 'Команда /Love, Командля для вибора рандомного числа /random, /help')
+    bot.reply_to(message, 'Команда , Командля для вибора рандомного числа /random, /help')
+#Рандомит число
 @bot.message_handler(commands=['random'])
 def handle_random(message):
     random_number = random.randint(1, 100)
